@@ -27,8 +27,9 @@ def recomendarLivros(pageSize: int, userRec: User):
 
     lista_paginada_livros = lista_livros.sort_values(by=['tier','nome'], ascending=[False, True])
 
-    print("Livros recomendados para {userRec.nome}:")
-    print(lista_paginada_livros['nome'].head(pageSize))
+    print(f"Livros recomendados para {userRec.nome}:")
+    for _, row in lista_paginada_livros.head(pageSize).iterrows():
+        print(f"{row['nome']} - {row['autor']} - {row['ano_de_publicacao']} - {row['tier']}")
 
 def criar_usuario():
     nome = input("Digite seu nome: ")
