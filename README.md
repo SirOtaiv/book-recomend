@@ -1,7 +1,18 @@
 # Book Recomendation Algorithm
 
 ## Index
-Criar um indece dos pontos abordados no read-me
+- [Starting Application](#starting-application)
+- [Code Structure](#code-structure)
+  - [Prerequisite](#prerequisite)
+  - [Classes and Data Types](#classes-and-data-types)
+    - [1. Users](#1-users)
+    - [2. Book](#2-book)
+    - [3. Database](#3-database)
+    - [4. Datatype](#4-datatype)
+  - [Algorithm](#algorithm)
+    - [Functions](#functions)
+    - [Execution](#execution)
+    - [Example](#example)
 
 ## Starting Application
 Clone o repositório para um diretório pelo comando:
