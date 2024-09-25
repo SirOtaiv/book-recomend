@@ -22,7 +22,6 @@ def recomendarLivros(pageSize: int, userRec: User):
     ]
 
     valor_filtros = sum(regra.astype(int) for regra in regra_livros)
-
     lista_livros['tier']= valor_filtros
 
     lista_paginada_livros = lista_livros.sort_values(by=['tier','nome'], ascending=[False, True])
